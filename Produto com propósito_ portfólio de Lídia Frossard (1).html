@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Produto com propósito: portfólio de Lídia Frossard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#f2f6f4;--surface:#ffffff;--ink:#14302e;--muted:#4f6663;--line:#cbd8d4;--accent:#0e6b66;--accent-ink:#ffffff;--sun:#f2b632;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1f1e;--surface:#162b29;--ink:#e6f0ee;--muted:#9bb4b0;--line:#2b4642;--accent:#5cc7bd;--accent-ink:#0f1f1e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1f1e;--surface:#162b29;--ink:#e6f0ee;--muted:#9bb4b0;--line:#2b4642;--accent:#5cc7bd;--accent-ink:#0f1f1e;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.hero{padding:64px 0 40px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:700;max-width:16ch;letter-spacing:-.02em}
+.lead{font-size:1.2rem;color:var(--muted);max-width:56ch;margin:20px 0 0}
+.who{margin:28px 0 0;font-weight:600}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+p{margin:0 0 14px;max-width:62ch}
+.hint{color:var(--muted);font-size:.95rem}
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:24px}
+fieldset{border:0;margin:0;padding:18px 0;border-bottom:1px solid var(--line)}
+fieldset:first-of-type{padding-top:0}
+legend{padding:0;font-weight:600;margin-bottom:4px}
+.dim{display:block;font-size:.9rem;color:var(--accent);font-weight:600;margin-bottom:2px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:8px;cursor:pointer;color:var(--muted)}
+.opt:hover{background:var(--bg)}
+.opt input{margin-top:5px;accent-color:var(--accent);flex:none}
+.opt:has(input:checked){background:var(--bg);color:var(--ink);box-shadow:inset 3px 0 0 var(--accent)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+button{font:600 1rem "Source Sans 3",sans-serif;cursor:pointer;border-radius:8px;min-height:44px;padding:0 20px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.ghost{background:transparent;color:var(--accent)}
+.actions{margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#result{margin-top:28px;padding-top:24px;border-top:2px solid var(--accent)}
+#result[hidden]{display:none}
+.level{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 6px}
+.dims{display:grid;gap:14px;margin:20px 0}
+.dl{display:flex;justify-content:space-between;font-weight:600}
+.bar{height:10px;border-radius:5px;background:var(--line);margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:5px;transition:width .4s}
+.next{background:var(--bg);border-left:4px solid var(--sun);padding:14px 16px;border-radius:0 8px 8px 0}
+.next h3{font-size:1.1rem;margin-bottom:6px}
+.next p{margin:0}
+.ctx{margin-top:28px}
+.ctx h3{font-size:1.1rem;margin-bottom:12px}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.stat{border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat b{display:block;font:700 2.2rem/1 "Bricolage Grotesque",sans-serif;color:var(--accent);margin-bottom:6px}
+.stat span{font-size:.92rem;color:var(--muted);display:block}
+.src{font-size:.88rem;color:var(--muted);margin:12px 0 0}
+dl.how{margin:0;display:grid;gap:18px}
+dt{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.15rem}
+dd{margin:4px 0 0;color:var(--muted);max-width:62ch}
+footer{padding:40px 0 56px}
+a{color:var(--accent);font-weight:600}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>Produto com propósito: dados e IA a serviço de quem mais precisa.</h1>
+  <p class="lead">Trabalho com gestão de produto em uma ONG e uso IA no dia a dia para decidir melhor, testar ideias mais rápido e fazer o impacto chegar a mais gente.</p>
+  <p class="who">Lídia Frossard</p>
+</header>
+
+<section aria-labelledby="t1">
+  <h2 id="t1">Sua ONG está pronta para usar dados e IA?</h2>
+  <p>Responda 8 perguntas rápidas sobre a rotina da sua organização. No fim, você vê em que nível ela está em quatro áreas e qual é o melhor próximo passo.</p>
+  <p class="hint">Leva cerca de 2 minutos. Suas respostas ficam só no seu navegador.</p>
+  <div class="tool">
+    <form id="quiz" onsubmit="return false"></form>
+    <div class="actions">
+      <button type="button" id="go" disabled>Ver meu resultado</button>
+      <span class="hint" id="prog">0 de 8 respondidas</span>
+    </div>
+    <div id="result" hidden aria-live="polite"></div>
+  </div>
+</section>
+
+<section aria-labelledby="t2">
+  <h2 id="t2">Como pensei e construí isto</h2>
+  <dl class="how">
+    <div><dt>O problema</dt><dd>Muitas ONGs querem usar IA, mas não sabem se estão prontas nem por onde começar. Acabam pulando para a ferramenta antes de ajeitar a base.</dd></div>
+    <div><dt>Para quem</dt><dd>Coordenadores e gestores de organizações sociais que precisam de um ponto de partida claro, sem jargão.</dd></div>
+    <div><dt>A decisão</dt><dd>Fiz perguntas sobre a rotina real, não sobre tecnologia, e um resultado que termina em uma ação concreta em vez de uma nota.</dd></div>
+    <div><dt>Onde a IA entrou</dt><dd>Usei o Claude para transformar a ideia em página funcional, revisar o texto e testar variações. As decisões de problema, público e escopo foram minhas.</dd></div>
+  </dl>
+</section>
+
+<footer>
+  <p>Criado por <a href="https://www.linkedin.com/in/lidiafrossard/">Lídia Frossard | LinkedIn</a></p>
+</footer>
+</div>
+
+<script>
+(function(){
+var D=["Dados","Pessoas e cultura","Ferramentas e IA","Ética e governança"];
+var Q=[
+[0,"Como a organização registra atendimentos e resultados?",["Na memória das pessoas ou em papéis soltos","Em planilhas de cada pessoa, sem padrão","Em uma base comum, com campos padronizados","Em sistema integrado, atualizado e consultado com frequência"]],
+[0,"Como os dados viram decisões?",["Quase não viram: decidimos pela experiência","Usamos dados só para prestar contas a financiadores","Revisamos indicadores periodicamente com a equipe","Indicadores guiam prioridades e testes de novas ideias"]],
+[1,"Quem sabe trabalhar com dados na equipe?",["Ninguém em específico","Uma pessoa, que atende todos os pedidos","Várias pessoas sabem o básico","A equipe tem rotina de análise e treinamento"]],
+[1,"Como a liderança enxerga a IA?",["Não é assunto por aqui","Há curiosidade, mas sem plano","Apoia experimentos pontuais","Há diretrizes claras e metas de uso"]],
+[2,"Que ferramentas a equipe usa no dia a dia?",["Basicamente e-mail e mensagens","Planilhas e documentos compartilhados","Ferramentas de gestão e painéis","Ferramentas integradas e automações"]],
+[2,"Como a equipe usa IA hoje?",["Não usa","Cada pessoa por conta própria, sem combinar","Em tarefas definidas, como textos e resumos","Em processos mapeados, com resultados medidos"]],
+[3,"Como são tratados os dados pessoais de beneficiários (LGPD)?",["Não há regras definidas","Há cuidado informal, sem registro","Há política escrita e acesso controlado","Há política, treinamento e revisão periódica"]],
+[3,"Antes de usar IA com dados da organização, o que acontece?",["Nada: cada pessoa decide","Pedimos que evitem dados sensíveis","Há regras sobre o que pode ou não ser enviado","Há regras, aprovação e avaliação de riscos"]]
+];
+var NEXT=[
+["Organize a base","Escolha um único lugar para registrar atendimentos e defina 5 campos obrigatórios. Sem dados confiáveis, nenhuma IA ajuda de verdade."],
+["Invista nas pessoas","Escolha uma pessoa de cada área para ser a referência em dados e faça uma oficina curta com casos reais da própria ONG."],
+["Teste em pequeno","Escolha uma tarefa repetitiva, como resumir relatórios, teste com IA por duas semanas e meça o tempo economizado."],
+["Escreva as regras","Redija uma página dizendo quais dados nunca vão para ferramentas de IA e quem aprova exceções. Comece pelos dados de beneficiários."]
+];
+var LV=["Inicial","Em estruturação","Em evolução","Avançada"];
+var LT=["O básico ainda está em construção, e isso é um ótimo ponto de partida.","Já existem bases, mas falta padronizar e dar escala.","A organização está bem encaminhada e pode começar a ganhar escala com IA.","A organização tem fundamentos sólidos para usar IA com segurança."];
+var form=document.getElementById("quiz"),go=document.getElementById("go"),prog=document.getElementById("prog"),res=document.getElementById("result");
+form.innerHTML=Q.map(function(q,k){
+  return '<fieldset><legend><span class="dim">'+D[q[0]]+'</span>'+q[1]+'</legend>'+
+  q[2].map(function(o,j){return '<label class="opt"><input type="radio" name="q'+k+'" value="'+(j+1)+'"><span>'+o+'</span></label>'}).join("")+'</fieldset>';
+}).join("");
+function answers(){return Q.map(function(q,k){var c=form.querySelector('input[name="q'+k+'"]:checked');return c?+c.value:0})}
+form.addEventListener("change",function(){
+  var a=answers(),n=a.filter(Boolean).length;
+  prog.textContent=n+" de 8 respondidas";go.disabled=n<8;
+  if(!res.hidden)res.hidden=true;
+});
+go.addEventListener("click",function(){
+  var a=answers(),s=[0,0,0,0],t=0;
+  Q.forEach(function(q,k){s[q[0]]+=a[k];t+=a[k]});
+  var pct=Math.round((t-8)/24*100),lv=pct<25?0:pct<50?1:pct<75?2:3,low=0;
+  s.forEach(function(v,i){if(v<s[low])low=i});
+  res.innerHTML='<p class="level">Nível: '+LV[lv]+' ('+pct+'%)</p><p>'+LT[lv]+'</p>'+
+  '<div class="dims">'+s.map(function(v,i){var p=Math.round((v-2)/6*100);
+    return '<div><div class="dl"><span>'+D[i]+'</span><span>'+p+'%</span></div><div class="bar"><i style="width:'+p+'%"></i></div></div>'}).join("")+'</div>'+
+  '<div class="next"><h3>Próximo passo: '+NEXT[low][0]+'</h3><p>Sua área com mais espaço para evoluir é '+D[low].toLowerCase()+'. '+NEXT[low][1]+'</p></div>'+
+  '<div class="ctx"><h3>Para comparar: o cenário das ONGs brasileiras</h3><div class="stats">'+
+  '<div class="stat"><b>6%</b><span>das organizações pesquisadas se declararam avançadas em integração tecnológica</span></div>'+
+  '<div class="stat"><b>58%</b><span>ainda estão em fase inicial de experimentação ou planejamento</span></div>'+
+  '<div class="stat"><b>70%</b><span>usam IA apenas na comunicação, como posts, textos e imagens</span></div></div>'+
+  '<p style="margin-top:14px">'+(lv<2?'Se o seu resultado ficou entre Inicial e Em estruturação, você está em boa companhia: a maioria das organizações pesquisadas também está começando.':'Seu resultado indica que a sua organização está à frente da maioria das pesquisadas, o que abre espaço para usar IA além da comunicação.')+'</p>'+
+  '<p class="src">Fontes: pesquisa do CanalSabIAr com o Instituto Beja, citada no <a href="https://www.idis.org.br/wp-content/uploads/2025/10/Regulamento-Chamada-Publica-Programa-IA.3_IDIS2025.pdf">regulamento do Programa IA.3 do IDIS</a>, e pesquisa do CanalSabIAr com mais de 400 organizações, noticiada pelo <a href="https://acontecendoaqui.com.br/?p=244641">Acontecendo Aqui</a>. São amostras de organizações que responderam às pesquisas e não representam todas as ONGs do país.</p></div>'+
+  '<div class="actions"><button type="button" class="ghost" id="again">Refazer</button></div>';
+  res.hidden=false;res.scrollIntoView({behavior:"smooth",block:"nearest"});
+  document.getElementById("again").addEventListener("click",function(){form.reset();res.hidden=true;go.disabled=true;prog.textContent="0 de 8 respondidas";form.scrollIntoView({block:"start"})});
+});
+})();
+</script>
+</body>
+</html>
